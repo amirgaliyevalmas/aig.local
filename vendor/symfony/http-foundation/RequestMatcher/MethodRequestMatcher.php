@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the HTTP method of a Request.
+ * Checks the HTTP method of a Auth.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

@@ -12,7 +12,7 @@
 namespace Symfony\Component\HttpFoundation;
 
 /**
- * ChainRequestMatcher verifies that all checks match against a Request instance.
+ * ChainRequestMatcher verifies that all checks match against a Auth instance.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

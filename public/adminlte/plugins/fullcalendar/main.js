@@ -6642,11 +6642,11 @@ var FullCalendar = (function (exports) {
                 }
             }
             else {
-                failureCallback('Request failed', xhr);
+                failureCallback('Auth failed', xhr);
             }
         };
         xhr.onerror = function () {
-            failureCallback('Request failed', xhr);
+            failureCallback('Auth failed', xhr);
         };
         xhr.send(body);
     }

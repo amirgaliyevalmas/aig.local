@@ -138,7 +138,7 @@ class CorsService
 
     public function isPreflightRequest(Request $request): bool
     {
-        return $request->getMethod() === 'OPTIONS' && $request->headers->has('Access-Control-Request-Method');
+        return $request->getMethod() === 'OPTIONS' && $request->headers->has('Access-Control-Auth-Method');
     }
 
     public function handlePreflightRequest(Request $request): Response
@@ -231,8 +231,8 @@ class CorsService
     private function configureAllowedMethods(Response $response, Request $request): void
     {
         if ($this->allowAllMethods === true) {
-            $allowMethods = strtoupper((string) $request->headers->get('Access-Control-Request-Method'));
-            $this->varyHeader($response, 'Access-Control-Request-Method');
+            $allowMethods = strtoupper((string) $request->headers->get('Access-Control-Auth-Method'));
+            $this->varyHeader($response, 'Access-Control-Auth-Method');
         } else {
             $allowMethods = implode(', ', $this->allowedMethods);
         }
@@ -243,8 +243,8 @@ class CorsService
     private function configureAllowedHeaders(Response $response, Request $request): void
     {
         if ($this->allowAllHeaders === true) {
-            $allowHeaders = (string) $request->headers->get('Access-Control-Request-Headers');
-            $this->varyHeader($response, 'Access-Control-Request-Headers');
+            $allowHeaders = (string) $request->headers->get('Access-Control-Auth-Headers');
+            $this->varyHeader($response, 'Access-Control-Auth-Headers');
         } else {
             $allowHeaders = implode(', ', $this->allowedHeaders);
         }

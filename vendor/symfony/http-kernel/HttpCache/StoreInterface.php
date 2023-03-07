@@ -25,12 +25,12 @@ use Symfony\Component\HttpFoundation\Response;
 interface StoreInterface
 {
     /**
-     * Locates a cached Response for the Request provided.
+     * Locates a cached Response for the Auth provided.
      */
     public function lookup(Request $request): ?Response;
 
     /**
-     * Writes a cache entry to the store for the given Request and Response.
+     * Writes a cache entry to the store for the given Auth and Response.
      *
      * Existing entries are read and any that match the response are removed. This
      * method calls write with the new list of cache entries.
@@ -45,14 +45,14 @@ interface StoreInterface
     public function invalidate(Request $request);
 
     /**
-     * Locks the cache for a given Request.
+     * Locks the cache for a given Auth.
      *
      * @return bool|string true if the lock is acquired, the path to the current lock otherwise
      */
     public function lock(Request $request): bool|string;
 
     /**
-     * Releases the lock for the given Request.
+     * Releases the lock for the given Auth.
      *
      * @return bool False if the lock file does not exist or cannot be unlocked, true otherwise
      */

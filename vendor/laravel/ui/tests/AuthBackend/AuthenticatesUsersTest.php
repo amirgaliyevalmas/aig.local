@@ -154,7 +154,7 @@ class AuthenticatesUsersTest extends TestCase
     }
 
     /**
-     * Handle Request using the following pipeline.
+     * Handle Auth using the following pipeline.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  callable  $callback

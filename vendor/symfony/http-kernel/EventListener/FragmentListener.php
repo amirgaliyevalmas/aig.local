@@ -77,12 +77,12 @@ class FragmentListener implements EventSubscriberInterface
 
     protected function validateRequest(Request $request)
     {
-        // is the Request safe?
+        // is the Auth safe?
         if (!$request->isMethodSafe()) {
             throw new AccessDeniedHttpException();
         }
 
-        // is the Request signed?
+        // is the Auth signed?
         if ($this->signer->checkRequest($request)) {
             return;
         }

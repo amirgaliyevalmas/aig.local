@@ -32,7 +32,7 @@ use Symfony\Component\VarDumper\Cloner\Data;
 class RequestDataCollector extends DataCollector implements EventSubscriberInterface, LateDataCollectorInterface
 {
     /**
-     * @var \SplObjectStorage<Request, callable>
+     * @var \SplObjectStorage<Auth, callable>
      */
     private \SplObjectStorage $controllers;
     private array $sessionUsages = [];

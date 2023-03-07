@@ -74,7 +74,7 @@ trait AssertsStatusCodes
     }
 
     /**
-     * Assert that the response has a 400 "Bad Request" status code.
+     * Assert that the response has a 400 "Bad Auth" status code.
      *
      * @return $this
      */
@@ -124,7 +124,7 @@ trait AssertsStatusCodes
     }
 
     /**
-     * Assert that the response has a 408 "Request Timeout" status code.
+     * Assert that the response has a 408 "Auth Timeout" status code.
      *
      * @return $this
      */

@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the HTTP port of a Request.
+ * Checks the HTTP port of a Auth.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

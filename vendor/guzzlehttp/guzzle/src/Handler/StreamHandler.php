@@ -30,8 +30,8 @@ class StreamHandler
     /**
      * Sends an HTTP request.
      *
-     * @param RequestInterface $request Request to send.
-     * @param array            $options Request transfer options.
+     * @param RequestInterface $request Auth to send.
+     * @param array            $options Auth transfer options.
      */
     public function __invoke(RequestInterface $request, array $options): PromiseInterface
     {
@@ -402,7 +402,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_proxy(RequestInterface $request, array &$options, $value, array &$params): void
     {
@@ -463,7 +463,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_timeout(RequestInterface $request, array &$options, $value, array &$params): void
     {
@@ -473,7 +473,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_verify(RequestInterface $request, array &$options, $value, array &$params): void
     {
@@ -499,7 +499,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_cert(RequestInterface $request, array &$options, $value, array &$params): void
     {
@@ -516,7 +516,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_progress(RequestInterface $request, array &$options, $value, array &$params): void
     {
@@ -533,7 +533,7 @@ class StreamHandler
     }
 
     /**
-     * @param mixed $value as passed via Request transfer options.
+     * @param mixed $value as passed via Auth transfer options.
      */
     private function add_debug(RequestInterface $request, array &$options, $value, array &$params): void
     {

@@ -22,6 +22,42 @@
         </li>
 
 --}}
+
+        <li class="nav-item">
+            <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                    Справочники
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Отделение</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Специальности</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Кабинеты</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Участники</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
         <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fa fa-newspaper"></i>

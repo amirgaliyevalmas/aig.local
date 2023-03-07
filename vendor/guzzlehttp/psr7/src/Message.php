@@ -196,7 +196,7 @@ final class Message
     /**
      * Parses a request message string into a request object.
      *
-     * @param string $message Request message string.
+     * @param string $message Auth message string.
      */
     public static function parseRequest(string $message): RequestInterface
     {

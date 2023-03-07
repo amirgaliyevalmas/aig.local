@@ -21,8 +21,8 @@ interface ClientInterface
     /**
      * Send an HTTP request.
      *
-     * @param RequestInterface $request Request to send
-     * @param array            $options Request options to apply to the given
+     * @param RequestInterface $request Auth to send
+     * @param array            $options Auth options to apply to the given
      *                                  request and to the transfer.
      *
      * @throws GuzzleException
@@ -32,8 +32,8 @@ interface ClientInterface
     /**
      * Asynchronously send an HTTP request.
      *
-     * @param RequestInterface $request Request to send
-     * @param array            $options Request options to apply to the given
+     * @param RequestInterface $request Auth to send
+     * @param array            $options Auth options to apply to the given
      *                                  request and to the transfer.
      */
     public function sendAsync(RequestInterface $request, array $options = []): PromiseInterface;
@@ -47,7 +47,7 @@ interface ClientInterface
      *
      * @param string              $method  HTTP method.
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -63,7 +63,7 @@ interface ClientInterface
      *
      * @param string              $method  HTTP method
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function requestAsync(string $method, $uri, array $options = []): PromiseInterface;
 

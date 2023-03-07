@@ -27,7 +27,7 @@ class ConfigDataCollector extends DataCollector implements LateDataCollectorInte
     private KernelInterface $kernel;
 
     /**
-     * Sets the Kernel associated with this Request.
+     * Sets the Kernel associated with this Auth.
      */
     public function setKernel(KernelInterface $kernel = null)
     {

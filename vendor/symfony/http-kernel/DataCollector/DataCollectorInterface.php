@@ -23,7 +23,7 @@ use Symfony\Contracts\Service\ResetInterface;
 interface DataCollectorInterface extends ResetInterface
 {
     /**
-     * Collects data for the given Request and Response.
+     * Collects data for the given Auth and Response.
      */
     public function collect(Request $request, Response $response, \Throwable $exception = null);
 

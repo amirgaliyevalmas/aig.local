@@ -37,11 +37,11 @@ class ProfilerListener implements EventSubscriberInterface
     private bool $onlyException;
     private bool $onlyMainRequests;
     private ?\Throwable $exception = null;
-    /** @var \SplObjectStorage<Request, Profile> */
+    /** @var \SplObjectStorage<Auth, Profile> */
     private \SplObjectStorage $profiles;
     private RequestStack $requestStack;
     private ?string $collectParameter;
-    /** @var \SplObjectStorage<Request, Request|null> */
+    /** @var \SplObjectStorage<Auth, Auth|null> */
     private \SplObjectStorage $parents;
 
     /**

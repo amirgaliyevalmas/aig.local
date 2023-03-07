@@ -158,7 +158,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Gets the Request instance associated with the main request.
+     * Gets the Auth instance associated with the main request.
      */
     public function getRequest(): Request
     {
@@ -253,7 +253,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Forwards the Request to the backend without storing the Response in the cache.
+     * Forwards the Auth to the backend without storing the Response in the cache.
      *
      * @param bool $catch Whether to process exceptions
      */
@@ -305,7 +305,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Lookups a Response from the cache for the given Request.
+     * Lookups a Response from the cache for the given Auth.
      *
      * When a matching cache entry is found and is fresh, it uses it as the
      * response without forwarding any request to the backend. When a matching
@@ -446,7 +446,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Forwards the Request to the backend and returns the Response.
+     * Forwards the Auth to the backend and returns the Response.
      *
      * All backend requests (cache passes, fetches, cache validations)
      * run through this method.
@@ -523,7 +523,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Checks whether the cache entry is "fresh enough" to satisfy the Request.
+     * Checks whether the cache entry is "fresh enough" to satisfy the Auth.
      */
     protected function isFreshEnough(Request $request, Response $entry): bool
     {
@@ -539,7 +539,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Locks a Request during the call to the backend.
+     * Locks a Auth during the call to the backend.
      *
      * @return bool true if the cache entry can be returned even if it is staled, false otherwise
      */
@@ -648,7 +648,7 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
     }
 
     /**
-     * Checks if the Request includes authorization or other sensitive information
+     * Checks if the Auth includes authorization or other sensitive information
      * that should cause the Response to be considered private by default.
      */
     private function isPrivateRequest(Request $request): bool

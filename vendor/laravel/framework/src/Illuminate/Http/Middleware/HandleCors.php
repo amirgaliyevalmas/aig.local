@@ -54,7 +54,7 @@ class HandleCors
         if ($this->cors->isPreflightRequest($request)) {
             $response = $this->cors->handlePreflightRequest($request);
 
-            $this->cors->varyHeader($response, 'Access-Control-Request-Method');
+            $this->cors->varyHeader($response, 'Access-Control-Auth-Method');
 
             return $response;
         }
@@ -62,7 +62,7 @@ class HandleCors
         $response = $next($request);
 
         if ($request->getMethod() === 'OPTIONS') {
-            $this->cors->varyHeader($response, 'Access-Control-Request-Method');
+            $this->cors->varyHeader($response, 'Access-Control-Auth-Method');
         }
 
         return $this->cors->addActualRequestHeaders($response, $request);

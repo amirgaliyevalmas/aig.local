@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the client IP of a Request.
+ * Checks the client IP of a Auth.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

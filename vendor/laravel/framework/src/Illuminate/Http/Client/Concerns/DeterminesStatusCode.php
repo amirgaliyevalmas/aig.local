@@ -66,7 +66,7 @@ trait DeterminesStatusCode
     }
 
     /**
-     * Determine if the response was a 400 "Bad Request" response.
+     * Determine if the response was a 400 "Bad Auth" response.
      *
      * @return bool
      */
@@ -116,7 +116,7 @@ trait DeterminesStatusCode
     }
 
     /**
-     * Determine if the response was a 408 "Request Timeout" response.
+     * Determine if the response was a 408 "Auth Timeout" response.
      *
      * @return bool
      */

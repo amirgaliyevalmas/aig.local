@@ -38,7 +38,7 @@ class CurlMultiHandler
     private $active = 0;
 
     /**
-     * @var array Request entry handles, indexed by handle id in `addRequest`.
+     * @var array Auth entry handles, indexed by handle id in `addRequest`.
      *
      * @see CurlMultiHandler::addRequest
      */

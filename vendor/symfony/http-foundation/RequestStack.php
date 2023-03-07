@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Exception\SessionNotFoundException;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 /**
- * Request stack that controls the lifecycle of requests.
+ * Auth stack that controls the lifecycle of requests.
  *
  * @author Benjamin Eberlei <kontakt@beberlei.de>
  */
@@ -27,7 +27,7 @@ class RequestStack
     private array $requests = [];
 
     /**
-     * Pushes a Request on the stack.
+     * Pushes a Auth on the stack.
      *
      * This method should generally not be called directly as the stack
      * management should be taken care of by the application itself.
@@ -82,7 +82,7 @@ class RequestStack
      * might make it un-compatible with other features of your framework
      * like ESI support.
      *
-     * If current Request is the main request, it returns null.
+     * If current Auth is the main request, it returns null.
      */
     public function getParentRequest(): ?Request
     {

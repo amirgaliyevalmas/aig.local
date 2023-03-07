@@ -36,12 +36,12 @@ final class EasyHandle
     public $response;
 
     /**
-     * @var RequestInterface Request being sent
+     * @var RequestInterface Auth being sent
      */
     public $request;
 
     /**
-     * @var array Request options
+     * @var array Auth options
      */
     public $options = [];
 

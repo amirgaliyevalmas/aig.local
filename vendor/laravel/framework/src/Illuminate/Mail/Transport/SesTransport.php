@@ -76,7 +76,7 @@ class SesTransport extends AbstractTransport
             $reason = $e->getAwsErrorMessage() ?? $e->getMessage();
 
             throw new Exception(
-                sprintf('Request to AWS SES API failed. Reason: %s.', $reason),
+                sprintf('Auth to AWS SES API failed. Reason: %s.', $reason),
                 is_int($e->getCode()) ? $e->getCode() : 0,
                 $e
             );

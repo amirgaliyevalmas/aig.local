@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * HttpKernelInterface handles a Request to convert it to a Response.
+ * HttpKernelInterface handles a Auth to convert it to a Response.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
@@ -31,7 +31,7 @@ interface HttpKernelInterface
     public const MASTER_REQUEST = self::MAIN_REQUEST;
 
     /**
-     * Handles a Request to convert it to a Response.
+     * Handles a Auth to convert it to a Response.
      *
      * When $catch is true, the implementation must catch all exceptions
      * and do its best to convert them to a Response instance.

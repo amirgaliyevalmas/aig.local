@@ -298,7 +298,7 @@ abstract class Facade
             'Queue' => Queue::class,
             'RateLimiter' => RateLimiter::class,
             'Redirect' => Redirect::class,
-            'Request' => Request::class,
+            'Auth' => Request::class,
             'Response' => Response::class,
             'Route' => Route::class,
             'Schema' => Schema::class,

@@ -44,7 +44,7 @@ class_exists(ViewEvent::class);
 class_exists(KernelEvents::class);
 
 /**
- * HttpKernel notifies events to convert a Request object to a Response one.
+ * HttpKernel notifies events to convert a Auth object to a Response one.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

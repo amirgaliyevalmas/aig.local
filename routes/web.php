@@ -13,18 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->group(function (){
 
-    Route::get('/', AdminController::class);
+Route::prefix('auth')->namespace('App\Http\Controllers\Auth')->group(function (){
 
-    Route::prefix('menu')->namespace('menu')->group(function (){
-        Route::get('/', 'IndexController@index')->name('admin.menu.index');
-        Route::get('/create', 'CreateController@create')->name('admin.menu.create');
-        Route::post('/', 'StoreController@store')->name('admin.menu.store');
-        Route::get('/{menu}', 'ShowController@show')->name('admin.menu.show');
-        Route::get('/{menu}/edit', 'EditController@edit')->name('admin.menu.edit');
-        Route::patch('/{menu}', 'UpdateController@update')->name('admin.menu.update');
-        Route::delete('/{menu}', 'DeleteController@delete')->name('admin.menu.delete');
+    Route::get('/','AuthController@index')->name('auth.index');
+    Route::post('/login','LoginController@login')->name('auth.login');
+
+    Route::middleware('auth')->group(function (){
+        Route::get('/logout','LogoutController@logout')->name('auth.logout');
+    });
+});
+
+
+Route::prefix('admin')->middleware('auth')->namespace('App\Http\Controllers\Admin')->group(function (){
+
+    Route::get('/', AdminController::class)->name('admin.index');
+
+    Route::prefix('department')->namespace('department')->group(function (){
+        Route::get('/', DepartmentIndexController::class)->name('admin.menu.index');
+        Route::post('/', DepartmentStoreController::class)->name('admin.menu.store');
+        Route::patch('/{department}', DepartmentUpdateController::class)->name('admin.menu.update');
     });
 
 

@@ -14,7 +14,7 @@ namespace Symfony\Component\HttpFoundation;
 trigger_deprecation('symfony/http-foundation', '6.2', 'The "%s" class is deprecated, use "%s" instead.', RequestMatcher::class, ChainRequestMatcher::class);
 
 /**
- * RequestMatcher compares a pre-defined set of checks against a Request instance.
+ * RequestMatcher compares a pre-defined set of checks against a Auth instance.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *

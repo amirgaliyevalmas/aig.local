@@ -88,7 +88,7 @@ class TrustProxies
     /**
      * Retrieve trusted header name(s), falling back to defaults if config not set.
      *
-     * @return int A bit field of Request::HEADER_*, to set which headers to trust from your proxies.
+     * @return int A bit field of Auth::HEADER_*, to set which headers to trust from your proxies.
      */
     protected function getTrustedHeaderNames()
     {

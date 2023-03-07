@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the Request URL host name matches a regular expression.
+ * Checks the Auth URL host name matches a regular expression.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

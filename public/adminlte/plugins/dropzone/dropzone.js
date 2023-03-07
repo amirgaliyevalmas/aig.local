@@ -9318,7 +9318,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
       };
 
       xhr.ontimeout = function () {
-        _this15._handleUploadError(files, xhr, "Request timedout after ".concat(_this15.options.timeout / 1000, " seconds"));
+        _this15._handleUploadError(files, xhr, "Auth timedout after ".concat(_this15.options.timeout / 1000, " seconds"));
       };
 
       xhr.onerror = function () {

@@ -69,7 +69,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
     }
 
     /**
-     * Return the Request instance.
+     * Return the Auth instance.
      *
      * @return $this
      */

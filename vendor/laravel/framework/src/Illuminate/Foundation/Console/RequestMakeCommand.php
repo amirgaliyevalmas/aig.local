@@ -28,7 +28,7 @@ class RequestMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $type = 'Request';
+    protected $type = 'Auth';
 
     /**
      * Get the stub file for the generator.

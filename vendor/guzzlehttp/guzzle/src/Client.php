@@ -95,7 +95,7 @@ class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
     /**
      * Asynchronously send an HTTP request.
      *
-     * @param array $options Request options to apply to the given
+     * @param array $options Auth options to apply to the given
      *                       request and to the transfer. See \GuzzleHttp\RequestOptions.
      */
     public function sendAsync(RequestInterface $request, array $options = []): PromiseInterface
@@ -112,7 +112,7 @@ class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
     /**
      * Send an HTTP request.
      *
-     * @param array $options Request options to apply to the given
+     * @param array $options Auth options to apply to the given
      *                       request and to the transfer. See \GuzzleHttp\RequestOptions.
      *
      * @throws GuzzleException
@@ -147,7 +147,7 @@ class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
      *
      * @param string              $method  HTTP method
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply. See \GuzzleHttp\RequestOptions.
+     * @param array               $options Auth options to apply. See \GuzzleHttp\RequestOptions.
      */
     public function requestAsync(string $method, $uri = '', array $options = []): PromiseInterface
     {
@@ -177,7 +177,7 @@ class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
      *
      * @param string              $method  HTTP method.
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply. See \GuzzleHttp\RequestOptions.
+     * @param array               $options Auth options to apply. See \GuzzleHttp\RequestOptions.
      *
      * @throws GuzzleException
      */

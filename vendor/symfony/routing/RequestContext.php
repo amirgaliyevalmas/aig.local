@@ -63,7 +63,7 @@ class RequestContext
     }
 
     /**
-     * Updates the RequestContext information based on a HttpFoundation Request.
+     * Updates the RequestContext information based on a HttpFoundation Auth.
      *
      * @return $this
      */

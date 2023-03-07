@@ -28,12 +28,12 @@ use Symfony\Component\HttpKernel\KernelEvents;
 class CacheAttributeListener implements EventSubscriberInterface
 {
     /**
-     * @var \SplObjectStorage<Request, \DateTimeInterface>
+     * @var \SplObjectStorage<Auth, \DateTimeInterface>
      */
     private \SplObjectStorage $lastModified;
 
     /**
-     * @var \SplObjectStorage<Request, string>
+     * @var \SplObjectStorage<Auth, string>
      */
     private \SplObjectStorage $etags;
 

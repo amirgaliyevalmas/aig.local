@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the Request content is valid JSON.
+ * Checks the Auth content is valid JSON.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

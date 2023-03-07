@@ -32,7 +32,7 @@ interface SurrogateInterface
     public function hasSurrogateCapability(Request $request): bool;
 
     /**
-     * Adds Surrogate-capability to the given Request.
+     * Adds Surrogate-capability to the given Auth.
      */
     public function addSurrogateCapability(Request $request);
 

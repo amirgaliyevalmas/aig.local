@@ -287,7 +287,7 @@ class Request implements ArrayAccess
      */
     public function offsetSet($offset, $value): void
     {
-        throw new LogicException('Request data may not be mutated using array access.');
+        throw new LogicException('Auth data may not be mutated using array access.');
     }
 
     /**
@@ -300,6 +300,6 @@ class Request implements ArrayAccess
      */
     public function offsetUnset($offset): void
     {
-        throw new LogicException('Request data may not be mutated using array access.');
+        throw new LogicException('Auth data may not be mutated using array access.');
     }
 }

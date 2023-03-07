@@ -38,7 +38,7 @@ final class FragmentUriGenerator implements FragmentUriGeneratorInterface
     public function generate(ControllerReference $controller, Request $request = null, bool $absolute = false, bool $strict = true, bool $sign = true): string
     {
         if (null === $request && (null === $this->requestStack || null === $request = $this->requestStack->getCurrentRequest())) {
-            throw new \LogicException('Generating a fragment URL can only be done when handling a Request.');
+            throw new \LogicException('Generating a fragment URL can only be done when handling a Auth.');
         }
 
         if ($sign && null === $this->signer) {

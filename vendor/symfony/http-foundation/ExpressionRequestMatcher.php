@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\RequestMatcher\ExpressionRequestMatcher as 
 trigger_deprecation('symfony/http-foundation', '6.2', 'The "%s" class is deprecated, use "%s" instead.', ExpressionRequestMatcher::class, NewExpressionRequestMatcher::class);
 
 /**
- * ExpressionRequestMatcher uses an expression to match a Request.
+ * ExpressionRequestMatcher uses an expression to match a Auth.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *

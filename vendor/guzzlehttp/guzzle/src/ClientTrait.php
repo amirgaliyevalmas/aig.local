@@ -21,7 +21,7 @@ trait ClientTrait
      *
      * @param string              $method  HTTP method.
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -35,7 +35,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -52,7 +52,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -69,7 +69,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -86,7 +86,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -103,7 +103,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -120,7 +120,7 @@ trait ClientTrait
      * contain the query string as well.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      *
      * @throws GuzzleException
      */
@@ -139,7 +139,7 @@ trait ClientTrait
      *
      * @param string              $method  HTTP method
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     abstract public function requestAsync(string $method, $uri, array $options = []): PromiseInterface;
 
@@ -152,7 +152,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function getAsync($uri, array $options = []): PromiseInterface
     {
@@ -168,7 +168,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function headAsync($uri, array $options = []): PromiseInterface
     {
@@ -184,7 +184,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function putAsync($uri, array $options = []): PromiseInterface
     {
@@ -200,7 +200,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function postAsync($uri, array $options = []): PromiseInterface
     {
@@ -216,7 +216,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function patchAsync($uri, array $options = []): PromiseInterface
     {
@@ -232,7 +232,7 @@ trait ClientTrait
      * template and additional variables to use in the URL template expansion.
      *
      * @param string|UriInterface $uri     URI object or string.
-     * @param array               $options Request options to apply.
+     * @param array               $options Auth options to apply.
      */
     public function deleteAsync($uri, array $options = []): PromiseInterface
     {

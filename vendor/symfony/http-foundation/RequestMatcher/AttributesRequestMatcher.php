@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * Checks the Request attributes matches all regular expressions.
+ * Checks the Auth attributes matches all regular expressions.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

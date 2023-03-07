@@ -10,7 +10,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 
 /**
- * HTTP Request exception
+ * HTTP Auth exception
  */
 class RequestException extends TransferException implements RequestExceptionInterface
 {
@@ -55,7 +55,7 @@ class RequestException extends TransferException implements RequestExceptionInte
     /**
      * Factory method to create a new exception with a normalized error message
      *
-     * @param RequestInterface             $request        Request sent
+     * @param RequestInterface             $request        Auth sent
      * @param ResponseInterface            $response       Response received
      * @param \Throwable|null              $previous       Previous exception
      * @param array                        $handlerContext Optional handler context

@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestMatcherInterface;
 
 /**
- * ExpressionRequestMatcher uses an expression to match a Request.
+ * ExpressionRequestMatcher uses an expression to match a Auth.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

@@ -10,7 +10,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 
 /**
- * Request redirect middleware.
+ * Auth redirect middleware.
  *
  * Apply this middleware like other middleware using
  * {@see \GuzzleHttp\Middleware::redirect()}.
@@ -158,7 +158,7 @@ class RedirectMiddleware
 
     public function modifyRequest(RequestInterface $request, array $options, ResponseInterface $response): RequestInterface
     {
-        // Request modifications to apply.
+        // Auth modifications to apply.
         $modify = [];
         $protocols = $options['allow_redirects']['protocols'];
 

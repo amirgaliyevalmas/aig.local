@@ -152,7 +152,7 @@ final class Utils
      * - query: (string) Set the query string value of the URI.
      * - version: (string) Set the protocol version.
      *
-     * @param RequestInterface $request Request to clone and modify.
+     * @param RequestInterface $request Auth to clone and modify.
      * @param array            $changes Changes to apply.
      */
     public static function modifyRequest(RequestInterface $request, array $changes): RequestInterface
